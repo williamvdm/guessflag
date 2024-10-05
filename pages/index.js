@@ -322,7 +322,7 @@ export default function FlagGame() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 p-4 sm:p-8">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
+        <div className="bg-gray-800 rounded-xl shadow-2xl border border-gray-700">
           <div className="p-6 sm:p-8">
             {/* Header Section */}
             <div className="flex items-center justify-between mb-8">
@@ -382,7 +382,7 @@ export default function FlagGame() {
                 {countryData.map((country) => (
                   <div key={country.code} className="group">
                     <div className="bg-gray-700 rounded-lg p-3 transition-transform duration-200 group-hover:scale-105">
-                      <div className="w-full aspect-[3/2] relative overflow-hidden rounded-md mb-2">
+                      <div className="w-full aspect-[3/2] relative rounded-md mb-2">
                         <img
                           src={`https://countryflagsapi.netlify.app/flag/${country.code}.svg`}
                           alt={`Flag of ${country.name}`}
@@ -403,7 +403,7 @@ export default function FlagGame() {
                 <div className="relative min-h-[400px]">
                   {/* Flag Display */}
                   <div className="flex flex-col items-center mb-6">
-                    <div className="w-full max-w-[480px] aspect-[3/2] relative overflow-hidden rounded-xl shadow-2xl">
+                    <div className="w-full max-w-[480px] aspect-[3/2] relative rounded-xl shadow-2xl">
                       <img
                         src={`https://countryflagsapi.netlify.app/flag/${currentCountry.code}.svg`}
                         alt="Guess this flag"
